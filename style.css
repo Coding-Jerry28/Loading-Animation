@@ -1,0 +1,89 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35rem;
+  background-color: #03661c;
+}
+.botton{
+  padding:1.9rem 4.4rem;
+  border: none;
+  background-color: #03661c;
+  color: #ffffff;
+  font-weight: 900;
+  box-shadow: 1.25rem 1.25rem 2.5rem -0.7rem black;
+  border-radius:3.125rem;
+  cursor: pointer;
+  
+}
+.text{
+  color:black;
+  font-size: 3.75rem;
+  font-style: italic;
+  font-weight: 900;
+}
+button:hover {
+  box-shadow: 1.25rem 1.25rem 2.5rem 0.7 #01380f inset;
+}
+
+.circle{
+  display: inline-block;
+  height: 1.25rem;
+  width: 1.25rem;
+  border: 1.5rem solid #ffffff;
+  border-top-color: transparent;
+  border-radius: 60%;
+  margin: 0.7rem 0.7rem -0.75rem 0.7rem ;
+  animation: load 2s infinite  ;
+}
+
+@keyframes load{
+  0% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.points{
+  margin: 0 0 0 0.7rem;
+  color: #ffffff;
+  font-size: 2.5rem;
+  font-weight:900;
+  animation: animate 0.9s infinite;
+}
+
+.point1{
+  animation-delay:0.45s;
+}
+
+.point2{
+animation-delay: 9s;
+}
+
+.point3{
+animation-delay: 1.15s;
+}
+
+
+@keyframes animate {
+  0%{
+      opacity:0.5;
+  }
+  50%{
+      opacity:1;  
+  }
+  100%{
+      opacity:0.5; 
+  }
+}
